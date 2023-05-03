@@ -1,5 +1,5 @@
-import React from 'react';
-import bannerImg from '../../assests/banner-img.jpeg';
+
+import bannerImg from '../../assets/banner-img.jpeg';
 import { Link } from 'react-router-dom';
 
 const Banner = () => {

@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import error from '../../assests/Frame.png';
+import error from '../../assets/Frame.png';
 
 const ErrorPage = () => {
     return (
@@ -8,7 +7,7 @@ const ErrorPage = () => {
             <img src={error} alt="" srcSet="" />
         <div className='max-w-md text-center'>
           <p className='text-2xl font-semibold md:text-3xl mb-8'>
-            Sorry, we couldn't find this page.
+            Sorry, we couldn not find this page.
           </p>
           <Link
             to='/'

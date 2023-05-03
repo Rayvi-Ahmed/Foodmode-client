@@ -1,4 +1,3 @@
-import React from 'react';
 import { useContext } from 'react';
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
@@ -17,7 +16,6 @@ const Register = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                toast.success("Successfully Log in");
                 navigate(from, { replace: true });
             })
             .catch((error) => {

@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
-import logo from "../../assests/foodmood logo.png";
+import logo from '../../assets/foodmood logo.png';
 import { FaUser } from "react-icons/fa";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
