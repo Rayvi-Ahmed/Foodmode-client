@@ -10,21 +10,26 @@ useEffect(()=>{
     fetch('http://localhost:5000/chefs')
     .then(res=>res.json())
     .then(data=> setchefs(data))
+    console.log(chefs)
 
 },[])
+
     return (
-        <div className='my-5 container mx-auto'>
+        <div>
 
-            {
-                chefs.map(chef=><ChefsCard
-                key={chef.id}
-                chef={chef}
-                ></ChefsCard>)
-            }
+       
+            <div className='container mx-auto grid grid-cols md:grid-cols-3 lg:grid-cols-3 gap-8 my-5'>
+                            {
+                                chefs.map(chef=><ChefsCard
+                                key={chef.id}
+                                chef={chef}
+                                ></ChefsCard>)
+                            }
 
-        
-        </div>
-    );
+                        </div>
+                    
+                    </div>
+                );
 };
 
 export default Chefs;
