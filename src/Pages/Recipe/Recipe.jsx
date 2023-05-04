@@ -4,7 +4,6 @@ import EachReacipe from '../EachRecipe/EachReacipe';
 const Recipe = ({recipes}) => {
 
     const {name,picture,recipe,bio,likes,ratings,num_of_recipes,years_of_experience}=recipes
-    console.log(recipe)
     return (
         <div className='container mx-auto p-5'>
             <div className="bg-base-200">
@@ -22,16 +21,13 @@ const Recipe = ({recipes}) => {
     
   </div>
 
- 
 </div>
 <div className='my-5 flex justify-center items-center gap-6'>
 {
   recipe.map(rcp=><EachReacipe
   key={rcp.id}
   rcp={rcp}
-  
   >
-
   </EachReacipe>)
 }
 

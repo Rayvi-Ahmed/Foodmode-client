@@ -6,7 +6,7 @@ import Blog from "../Pages/Blog/Blog";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Main from "../Layout/Main";
 import RecipieDetails from "../Pages/RecipeDetails/RecipieDetails";
-import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
+import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute"
 
 export const router = createBrowserRouter([
     {
