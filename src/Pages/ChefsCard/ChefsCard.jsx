@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const ChefsCard = (props) => {
@@ -16,7 +17,7 @@ const ChefsCard = (props) => {
             <p>Total Racipe {num_of_recipes}+ </p>
             </div>
             <div className="card-actions justify-end">
-            <button className="btn btn-primary">Viwe Racipie</button>
+   <Link to={'/recipe'}><button className="btn btn-primary">Viwe Racipie</button></Link>
             </div>
             </div>
         </div>

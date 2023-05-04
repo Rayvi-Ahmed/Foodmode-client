@@ -5,6 +5,8 @@ import Register from "../Pages/Register/Register";
 import Blog from "../Pages/Blog/Blog";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Main from "../Layout/Main";
+import RecipieDetails from "../Pages/RecipeDetails/RecipieDetails";
+import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +29,12 @@ export const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path:'/recipe',
+                element:<PrivateRoute>
+                    <RecipieDetails></RecipieDetails>
+                </PrivateRoute>
             }
         ]
     }
