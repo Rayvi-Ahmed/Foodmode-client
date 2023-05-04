@@ -17,7 +17,7 @@ const ChefsCard = (props) => {
             <p>Total Racipe {num_of_recipes}+ </p>
             </div>
             <div className="card-actions justify-end">
-   <Link to={'/recipe'}><button className="btn btn-primary">Viwe Racipie</button></Link>
+   <Link to={'/id'}><button className="btn btn-primary">Viwe Racipie</button></Link>
             </div>
             </div>
         </div>

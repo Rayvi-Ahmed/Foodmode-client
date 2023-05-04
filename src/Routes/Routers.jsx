@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
                 element: <Blog></Blog>
             },
             {
-                path:'/recipe',
+                path:'/id',
                 element:<PrivateRoute>
                     <RecipieDetails></RecipieDetails>
                 </PrivateRoute>
