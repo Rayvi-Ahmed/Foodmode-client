@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Recipe = ({recipe}) => {
+const Recipe = ({recipes}) => {
+
+    const {name,picture,recipe}=recipes
     console.log(recipe)
-    const {name,picture}=recipe
     return (
         <div>
             <div className="card card-compact w-96 bg-base-100 shadow-xl">

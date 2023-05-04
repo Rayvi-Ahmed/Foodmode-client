@@ -5,22 +5,21 @@ import { useParams } from 'react-router-dom';
 import Recipe from '../Recipe/Recipe';
 
 const RecipieDetails = () => {
-    const [recipes,setRecipe]=useState([])
+    const [recipes,setRecipe]=useState({})
     const {id}=useParams()
 
     useEffect(()=>{
         fetch(`http://localhost:5000/chefs/${id}`)
         .then(res=>res.json())
         .then(data=>setRecipe(data))
-    },[])
+    },[id])
     return (
         <div>
          {
             <Recipe
             key={recipes.id}
-            recipe={recipes}
+            recipes={recipes}
             ></Recipe>
-      
                 }
                 </div>
     );
