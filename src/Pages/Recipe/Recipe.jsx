@@ -23,13 +23,13 @@ const Recipe = ({recipes}) => {
 
 </div>
 <div className='my-5 flex justify-center items-center gap-6'>
-{
+{/* {
   recipe.map(rcp=><EachReacipe
   key={rcp.id}
   rcp={rcp}
   >
   </EachReacipe>)
-}
+} */}
 
 </div>
         </div>
