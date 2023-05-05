@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
+import { FaHeart} from "@react-icons/all-files/fa/FaBeer";
 
 const EachReacipe = ({rcp}) => {
     const [disbale,setdisable]=useState(false)
@@ -8,11 +9,11 @@ const EachReacipe = ({rcp}) => {
         setdisable(true)
         toast.success('My favorite recipe')
     }
-    const {recipe_name,ingradient,coocking_method,recipe_rating}=rcp
+    const {recipe_name,ingradient,picture,coocking_method,recipe_rating}=rcp
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
-             
+            <div className="card w-70  bg-base-100 shadow-xl">
+          <figure> <img src={picture}  alt="" />  </figure>
   <div className="card-body">
     <h2 className="card-title">
       {recipe_name}
