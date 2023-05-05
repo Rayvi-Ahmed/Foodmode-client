@@ -1,8 +1,17 @@
+// import React from "react";
 
 const Blog = () => {
+// const ref = React.createRef();
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      {/* <div>
+                    <Pdf targetRef={ref} filename="code-example.pdf">
+                        {({ toPdf }) => <button onClick={toPdf} className="inline-flex items-center m-2  justify-center h-10 px-7 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-rose-400  hover:bg-rose-700 focus:shadow-outline focus:outline-none"><FaFileDownload className='m-2'></FaFileDownload>Download PDF</button>}
+                    </Pdf>
+
+                </div> */}
+      
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
             Welcome to my Blog
@@ -41,6 +50,7 @@ const Blog = () => {
           here you can see trending news everyday. keep in touch.
         </p>
       </div>
+      {/* ref={ref} */}
       <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
         <div className="px-10 py-20 text-center bg-gray-300 border rounded lg:px-5 lg:py-10 xl:py-20">
           <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">

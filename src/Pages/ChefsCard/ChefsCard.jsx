@@ -7,7 +7,9 @@ const ChefsCard = (props) => {
     return (
                 <div>
                     <div className="card bg-base-100 shadow-md">
-                    <figure><img src={picture} alt="Shoes" /></figure>
+                
+                   <figure><img src={picture} alt="Shoes" /></figure>
+              
                     <div>
             <div className="card-body text-start">
             <h2 className="card-title">{name}</h2>

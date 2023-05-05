@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import EachReacipe from '../EachRecipe/EachReacipe';
+import { json } from 'react-router-dom';
+import LazyLoad from 'react-lazy-load';
 
 const Recipe = ({recipes}) => {
+     const {name,picture,bio,likes,ratings,num_of_recipes,years_of_experience}=recipes
+  const [recipe,setrecipe]=useState([])
 
-    const {name,picture,recipe,bio,likes,ratings,num_of_recipes,years_of_experience}=recipes
+  useEffect(()=>{
+    fetch('http://localhost:5000/recipe')
+    .then(res=>res.json())
+    .then(data=>setrecipe(data))
+  },[])
+
+ 
     return (
         <div className='container mx-auto p-5'>
             <div className="bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-    <img src={picture} className="max-w-sm rounded-lg shadow-2xl" />
+ <LazyLoad offset={700} threshold={0.95}>
+ <img src={picture} className="max-w-sm rounded-lg shadow-2xl" />
+ </LazyLoad>
     <div>
       <h1 className="text-3xl font-bold">{name}</h1>
       <p className="py-6"><span className='font-bold'>Chef Bio:</span> {bio}.</p>
@@ -23,13 +35,13 @@ const Recipe = ({recipes}) => {
 
 </div>
 <div className='my-5 flex justify-center items-center gap-6'>
-{/* {
+{
   recipe.map(rcp=><EachReacipe
   key={rcp.id}
   rcp={rcp}
   >
   </EachReacipe>)
-} */}
+}
 
 </div>
         </div>
