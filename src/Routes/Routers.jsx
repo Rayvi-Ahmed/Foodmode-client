@@ -7,12 +7,13 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Main from "../Layout/Main";
 import RecipieDetails from "../Pages/RecipeDetails/RecipieDetails";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute"
+import About from "../Pages/About/About";
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main/>,
-        errorElement: <ErrorPage/>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path:'/about',
+                element:<About></About>
             },
             {
                 path:':id',

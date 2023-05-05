@@ -2,6 +2,7 @@ import React from 'react';
 import pizza from './../assets/pizza.jpg'
 import pizza1 from './../assets/pizza-1.jpg'
 import chicken from './../assets/chicken.jpg'
+import { Link } from 'react-router-dom';
 
 
 const Carusel = () => {
@@ -29,16 +30,15 @@ const Carusel = () => {
 </div>
    </div>
 
-   <div>
-   <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
-  <div className="collapse-title text-xl font-medium">
-    Focus me to see content
-  </div>
-  <div className="collapse-content">
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+   <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+      <h1 className="text-5xl font-bold">Yummy Italian Food!</h1>
+      <p className="py-6">You can take huge recipe idea from each wporld clas chef dishes ,if you interested the go there.</p>
+      <Link to={'/blog'}><button className="btn btn-primary">Viwe Racipie</button></Link>
+    </div>
   </div>
 </div>
-   </div>
      </div>
     </div>
     );

@@ -50,7 +50,7 @@ const NavBar = () => {
                 Blog
               </a>
             </li>
-            <li>
+            <Link to={'/about'}>
               <a
                 href="/banner"
                 aria-label="About us"
@@ -59,7 +59,7 @@ const NavBar = () => {
               >
                 About us
               </a>
-            </li>
+            </Link>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li className="text-white">
