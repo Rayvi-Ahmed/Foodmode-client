@@ -9,7 +9,7 @@ const RecipieDetails = () => {
     const {id}=useParams()
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/chefs/${id}`)
+        fetch(`https://server-food-leader-jy08a8pb5-rayvi-ahmed.vercel.app/chefs/${id}`)
         .then(res=>res.json())
         .then(data=>setRecipe(data))
     },[id])
