@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import EachReacipe from '../EachRecipe/EachReacipe';
-import { json } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
 
 const Recipe = ({recipes}) => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import pizza from './../assets/pizza.jpg'
 import pizza1 from './../assets/pizza-1.jpg'
 import chicken from './../assets/chicken.jpg'
